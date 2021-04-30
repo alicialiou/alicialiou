@@ -184,6 +184,47 @@
 
         }
 
+        .mobile-btn {
+            display: none;
+        }
+
+        @media screen and (max-width:500px) {
+            .container {
+                width: 100%;
+            }
+
+            .navbar-left {
+                display: none;
+            }
+
+            .mobile-btn {
+                display: block;
+                width: 33.3333%;
+            }
+
+            .img-300 {
+                width: 100px;
+                height: 100px;
+            }
+
+            .section-title {
+                align-items: center;
+            }
+
+            .buy-link {
+                padding: 5px 8px;
+                height: 100%;
+            }
+
+            p {
+                font-size: 10px;
+            }
+
+            .img-57 {
+                width: 200px;
+            }
+        }
+
         footer {
             display: flex;
             margin-top: 40px;
@@ -201,7 +242,7 @@
                 <a href="#">About</a>
                 <a href="#">Contact</a>
             </div>
-            <div class="logo">パオパオ</div>
+            <div class="logo">ALICIA LIOU</div>
             <div class="navbar-right">
                 <i class="fab fa-instagram"></i>
                 <i class="fab fa-twitter"></i>
@@ -249,7 +290,7 @@
                 <div class="img-300">
                     <img src="./HTMLCSS-master/website_imgs/product4.jpg" alt="product4">
                 </div>
-                <p>Lisa Shirt </p>
+                <p>Collins Shirt </p>
                 <p>$50.00</p>
 
             </div>
@@ -264,7 +305,7 @@
                 <div class="img-300">
                     <img src="./HTMLCSS-master/website_imgs/product5.jpg" alt="product4">
                 </div>
-                <p>Lisa Dress </p>
+                <p> Dress </p>
                 <p>$80.00</p>
 
             </div>
@@ -307,9 +348,7 @@
             </div>
 
         </footer>
-        <!-- <div class="row justify-contnet-center mt-40 ">
-            <a href="#" class="text-gray">Sign Up</a>
-        </div> -->
+
     </main>
 </body>
 

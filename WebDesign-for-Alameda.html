@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALICIA LIOU Web Design</title>
+    <link rel="stylesheet" href="./fontawesome-free-5.15.3-web/css/all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        .container {
+            width: 960px;
+            margin: 0 auto;
+
+        }
+
+        .row {
+            display: flex;
+        }
+
+
+        .navbar-left,
+        .logo,
+        .navbar-right {
+            width: 33.333%;
+        }
+
+        .navbar-left>a {
+            margin-right: 20px;
+        }
+
+        .logo {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar-right {
+            display: flex;
+            justify-content: flex-end;
+            gap: 24px;
+        }
+
+        .navbar-right>i {
+            font-size: 1.2rem;
+
+
+        }
+
+        .section-title {
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+
+        .buy-link {
+            background-color: #777;
+
+            padding: 20px;
+            color: #fff;
+
+        }
+
+        .product-area {
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+
+        .img-300 {
+            width: 300px;
+            height: 300px;
+
+        }
+
+        .img-300>img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .subtitle {
+            width: 300px;
+            margin: 0 auto;
+
+            margin-top: 40px;
+        }
+
+        .subtitle>span {
+            width: 300px;
+        }
+
+        .demo {
+            margin-top: 40px;
+            justify-content: space-between;
+
+        }
+
+        .img-57 {
+            width: 500px;
+            height: 700px;
+        }
+
+        .img-57>img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover
+        }
+
+        .order-1 {
+            order: 1;
+        }
+
+        .order-2 {
+            order: 2;
+        }
+
+
+        .justify-contnet-center {
+            justify-content: center;
+        }
+
+        .photo {
+            margin-top: 40px;
+        }
+
+        .img-70 {
+            width: 70%
+        }
+
+        .img-30 {
+            width: 30%
+        }
+
+        .img-70>img,
+        .img-30>img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .mt-40 {
+            margin-top: 40px;
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        .row-bottom {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+            gap: 24px;
+        }
+
+        .bottom-subtitle {
+            width: 300px;
+            margin: 0 auto;
+            justify-content: center;
+            margin-top: 40px;
+
+        }
+
+        .navbar-bottom {
+            display: flex;
+            gap: 24px;
+        }
+
+        .navbar-bottom>i {
+            font-size: 1.2rem;
+
+
+        }
+
+        .mobile-btn {
+            display: none;
+        }
+
+        @media screen and (max-width:500px) {
+            .container {
+                width: 100%;
+            }
+
+            .navbar-left {
+                display: none;
+            }
+
+            .mobile-btn {
+                display: block;
+                width: 33.3333%;
+            }
+
+            .img-300 {
+                width: 100px;
+                height: 100px;
+            }
+
+            .section-title {
+                align-items: center;
+            }
+
+            .buy-link {
+                padding: 5px 8px;
+                height: 100%;
+            }
+
+            p {
+                font-size: 10px;
+            }
+
+            .img-57 {
+                width: 200px;
+            }
+        }
+
+        footer {
+            display: flex;
+            margin-top: 40px;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="container">
+        <div class="row">
+            <div class="navbar-left">
+                <a href="#">Shop</a>
+                <a href="#">Lookbook</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="logo">ALICIA LIOU</div>
+            <div class="navbar-right">
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+
+        </div>
+    </nav>
+    <main class="container">
+        <section class="row section-title">
+            <h2>New In</h2>
+            <a href="#" class="buy-link">Shop Now</a>
+
+        </section>
+
+
+        <section class="row product-area">
+            <div class=items>
+                <div class="img-300">
+                    <img src="./HTMLCSS-master/website_imgs/product1.jpg" alt="product1">
+                </div>
+                <p>Linen Top / Blue</p>
+            </div>
+            <div class=items>
+                <div class="img-300">
+                    <img src="./HTMLCSS-master/website_imgs/product2.jpg" alt="product2">
+                </div>
+                <p>Linen Bottom / Grey</p>
+            </div>
+            <div class=items>
+                <div class="img-300">
+                    <img src="./HTMLCSS-master/website_imgs/product3.jpg" alt="product3">
+                </div>
+                <p>Linen Dress / Red</p>
+            </div>
+            <div class="paragraph"></div>
+        </section>
+
+
+        <section class=subtitle>
+            <span>Made with love in Los Angeles from all natural eco-friendly materials. </span>
+        </section>
+        <section class="row demo">
+            <div class="demo-info order-2">
+                <div class="img-300">
+                    <img src="./HTMLCSS-master/website_imgs/product4.jpg" alt="product4">
+                </div>
+                <p>Collins Shirt </p>
+                <p>$50.00</p>
+
+            </div>
+            <div class="demo-model order-1">
+                <div class="img-57">
+                    <img src="./HTMLCSS-master/website_imgs/model1.jpg" alt="model1">
+                </div>
+            </div>
+        </section>
+        <section class="row demo">
+            <div class="demo-info ">
+                <div class="img-300">
+                    <img src="./HTMLCSS-master/website_imgs/product5.jpg" alt="product4">
+                </div>
+                <p> Dress </p>
+                <p>$80.00</p>
+
+            </div>
+            <div class="demo-model order-1">
+                <div class="img-57">
+                    <img src="./HTMLCSS-master/website_imgs/model2.jpg" alt="model1">
+                </div>
+            </div>
+        </section>
+
+
+        <div class="row justify-contnet-center mt-40 ">
+            <a href="#" class="text-gray">View Lookbook</a>
+        </div>
+        <section class="row photo">
+            <div class="img-70">
+                <img src="./HTMLCSS-master/website_imgs/model3.jpg" alt="">
+            </div>
+            <div class="img-30">
+                <img src="./HTMLCSS-master/website_imgs/model4.jpg" alt="">
+            </div>
+        </section>
+        <section class="row-bottom">
+            <div class="navbar-bottom">
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+
+        </section>
+        <section class=bottom-subtitle>
+            <span>Sign up to receive news and updates.</span>
+        </section>
+        <footer class="container">
+            <div class="mt-40">
+                <label for="email"></label>
+                <input type="email" id="email" placeholder="Email Address">
+
+                <button>Sign Up</button>
+            </div>
+
+        </footer>
+
+    </main>
+</body>
+
+
+</html>
