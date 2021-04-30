@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-shrink</title>
+    <style>
+        .wrap {
+
+            width: 70%;
+            height: 900px;
+            background-color: darkgoldenrod;
+            display: flex;
+            flex-direction: row;
+            /* justify-content: center; */
+            justify-content: space-between;
+            /* justify-content: start; */
+
+
+
+        }
+
+        .box {
+            width: 50%;
+            height: 50px;
+            background-color: darkcyan;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #f5f5f7;
+            outline: 1px solid #000;
+            flex-shrink: 1;
+            /* -當空間不足夠的時候，讓 box 彈性收縮，會自動計算。
+            避免爆版超出版面， flex-shrink 預設為1，需自行針對不想彈性收縮的 box 各別設定參數為 0。
+
+
+- */
+
+
+        }
+
+        .logo {
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="box">box1</div>
+        <div class="box logo">box2</div>
+        <div class="box">box3</div>
+    </div>
+</body>
+
+</html>

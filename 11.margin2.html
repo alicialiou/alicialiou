@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        section {
+            margin-top: 13px;
+            margin-bottom: 87px;
+            /* padding-top: 1px;
+            border:1px solid black; */
+
+        }
+
+        header {
+            margin-top: 87px;
+        }
+
+        footer {
+            margin-bottom: 13px;
+        }
+
+        -偽元素- section::before {
+            content: "";
+            display: inline-block;
+        }
+    </style>
+
+    <section>
+        <header>上邊界重疊是 87</header>
+        <footer>下邊界重疊還是 87 不能再高</footer>
+
+    </section>
+</body>
+
+</html>

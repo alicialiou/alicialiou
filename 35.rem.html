@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rem</title>
+    <style>
+        html {
+            font-size: 16px;
+            /* -預設16- -rem取決於px的根-*/
+        }
+
+        .rem {
+            font-size: 1rem;
+
+        }
+
+        .box {
+            width: 10rem;
+            height: 200px;
+            background-color: salmon;
+        }
+    </style>
+</head>
+<!-- -css放head 內容放body- -->
+
+<body>
+    <div class="box"></div>
+    <p>Hello World</p>
+    <p class="rem">Hello World</p>
+</body>
+
+</html>

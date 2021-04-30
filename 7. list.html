@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./css/reset.css"> -->
+    <!-- -連結外面的reset.css安裝到自己project 或 paddind 0 margin 0 body margin 0- -->
+    <style>
+        /* ul{
+            list-style-type: circle;
+            list-style: square;
+        } */
+        ul{
+            list-style-type: none;
+            /* -預設：padding左 margin上下 body也有margin- */
+            /* -reset css- */
+            /* -內容區(content)、內邊距(padding)、邊框(border)、外邊距(margin)- */
+            padding: 0;
+            margin: 0;
+            background-color:rgb(0,0,0,0.8);
+        }
+        ul>li {
+        display: inline-block;
+        margin: 10px;
+        line-height: 3em;
+        }
+
+        body{
+            margin: 0;
+        }
+        ul>li>a{
+            text-decoration: none;
+            color: #f5f5f7;
+            margin-bottom: -6px;
+        }
+        #mysection, #mysection2, #mysection3{
+            height: 400;
+        }
+        .logo{
+            background-size: 16px 44px;
+            background-repeat: no-repeat;
+            background-image: url(https://www.apple.com/ac/globalnav/6/zh_TW/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_apple_image__cxwwnrj0urau_large.svg);
+            background-position: center center;
+            color: #f5f5f7;
+            width: 16px;
+            height: 22px;
+        }
+
+
+    </style>
+    
+</head>
+<body>
+    <!-- <ul>
+       <li><a href="./1.html5.html"></a>Link1</li>
+       <li><a href="./2.inline.html"></a>Link2</li>
+       <li><a href="./3.block.html"></a>Link3</li>
+    </ul> -->
+
+    <nav>
+        <!-- -ul>li*4>a[href="#"]{Link$}- -->
+        <ul><ul>
+          <ul>
+              <li>
+                  <a href="#">
+                      <div class="logo"></div>
+                  </a>
+              </li>
+              <li><a href="http://www.google.com/">Google</a></li>
+              <li><a href="./5.card.html">Card</a></li>
+              <li><a href="#">Link3</a></li>
+              <li><a href="#">Link4</a></li>
+          </ul>
+        </ul></ul>
+    </nav>
+    <div id ="mySection1">
+        <h1>mySection1</h1>
+    </div>
+    <div id ="mySection2">
+        <h1>mySection2</h1>
+    </div>
+    
+    
+
+</body>
+    
+</html>

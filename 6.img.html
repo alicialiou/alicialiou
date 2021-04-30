@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .img-wrap{
+            width: 300px;
+            height: 300px;
+            background-color:olive;
+            /* overflow: hidden; */
+            border: 3px solid;
+        }
+        .img-wrap > img {
+            width:100%;
+            height:100%;
+        }
+        .cover{
+            object-fit:cover;
+        }
+        .contain{
+            object-fit: contain;
+        }
+        .fill{
+            object-fit: fill;
+        }
+        .none{
+            object-fit: none;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <!-- -alt 當網路不好時顯現的字-
+    -titile 滑鼠放上面會出現的字- -->
+    <div class="img-wrap">
+        <img class="cover"img src="./pancakes-2291908_1920.jpg" alt="berry pancakes" title="莓果鬆餅">
+        <h3>cover</h3>
+    </div>
+
+    <div class="img-wrap">
+        <img class="contain"img src="./pancakes-2291908_1920.jpg" alt="berry pancakes" title="莓果鬆餅">
+        <h3>contain</h3>
+    </div>
+    
+    <div class="img-wrap">
+        <img class="fill"img src="./pancakes-2291908_1920.jpg" alt="berry pancakes" title="莓果鬆餅">     
+        <h3>fill</h3>
+    </div>
+
+    <div class="img-wrap">
+        <img class="none"img src="./pancakes-2291908_1920.jpg" alt="berry pancakes" title="莓果鬆餅">       
+        <h3>none</h3>
+    </div>
+</body>
+</html>

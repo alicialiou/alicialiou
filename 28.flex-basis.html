@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-basis</title>
+    <style>
+        .wrap {
+
+            width: 70%;
+            height: 900px;
+            background-color: darkgoldenrod;
+            display: flex;
+            flex-direction: row;
+            /* justify-content: center; */
+            justify-content: space-between;
+            /* justify-content: start; */
+
+
+
+        }
+
+        .box {
+            /* -權重 max-width/min-width > flex-basis > width > content- */
+            /* width: 100px;
+            flex-basis: 50px;
+            min-width: 200px; */
+            height: 50px;
+            background-color: darkcyan;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #f5f5f7;
+            outline: 1px solid #000;
+            flex: 0, 1 50px;
+
+            /* -Flex-basis 其實就是決定 items 放進 flex 容器的寬度。
+            例1:沒給 flex-basis，則預設值為 auto，寬度取決於 width 的設定。
+            例2:如果沒給 width 設定，則寬度由內容決定。
+            論: max-width/min-width > flex-basis > width > content
+
+。
+
+
+- */
+
+
+        }
+
+        .logo {
+            width: 150px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="box">box1</div>
+        <div class="box logo">box2</div>
+        <div class="box">box3</div>
+    </div>
+</body>
+
+</html>

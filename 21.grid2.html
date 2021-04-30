@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap {
+            width: 960px;
+            /* -vh不一定支援手機 但桌機可以 100vh可以達到width 100%的全版面效果- */
+            background-color: #000;
+            display: grid;
+            /* -auto自動分配剩下空間- */
+            /* -fr是grid的小孩以fr為主 fr跟auto不能混用 先分fr才分auto- */
+            grid-template-columns: 240px auto 200px auto;
+            /* -高通常靠內容物在撐- */
+            grid-template-rows: 100px 200px 1fr;
+            gap: 5px 5px
+        }
+    </style>
+    <style>
+        .container {
+            width: 960px;
+            height: 500px;
+            background-color: #ccc;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: 240px auto 100px auto;
+            grid-template-rows: 100px 200px 1fr;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- .autobg{box$}*12 -->
+        <div class="autobg">box1</div>
+        <div class="autobg">box2</div>
+        <div class="autobg">box3</div>
+        <div class="autobg">box4</div>
+        <div class="autobg">box5</div>
+        <div class="autobg">box6</div>
+        <div class="autobg">box7</div>
+        <div class="autobg">box8</div>
+        <div class="autobg">box9</div>
+        <div class="autobg">box10</div>
+        <div class="autobg">box11</div>
+        <div class="autobg">box12</div>
+    </div>
+    <script>
+        function getRandomInt(max) {
+            return Math.floor(Math.random() * Math.floor(max - 50) + 100);
+        }
+
+        function getRBGA() {
+            return `rgba(${getRandomInt(250)},${getRandomInt(250)},${getRandomInt(250)},1)`
+        }
+
+        const elements = document.querySelectorAll('.autobg');
+
+        Array.from(elements).forEach((element, index) => {
+            element.style.backgroundColor = getRBGA();
+        });
+
+    // $('.autobg').each(function (index, currentElement) {
+    //     currentElement.style.backgroundColor = getRBGA();
+    // });
+    </script>
+
+</body>
+
+</html>
