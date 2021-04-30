@@ -89,11 +89,13 @@
             object-fit: cover;
         }
 
+
         .subtitle {
-            width: 300px;
+            width: 900px;
             margin: 0 auto;
-            /* justify-content: center; */
+            text-align: center;
             margin-top: 40px;
+            color: gray;
         }
 
         .subtitle>span {
@@ -157,6 +159,13 @@
             color: gray;
         }
 
+        .row-viewbook {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
         .row-bottom {
             text-align: center;
             display: flex;
@@ -168,10 +177,11 @@
         .bottom-subtitle {
             width: 300px;
             margin: 0 auto;
-            justify-content: center;
+            text-align: center;
             margin-top: 40px;
 
         }
+
 
         .navbar-bottom {
             display: flex;
@@ -189,6 +199,11 @@
         }
 
         @media screen and (max-width:500px) {
+            * {
+                font-size: 10px;
+                font-family: 'Open Sans', sans-serif;
+            }
+
             .container {
                 width: 100%;
             }
@@ -203,17 +218,55 @@
             }
 
             .img-300 {
-                width: 100px;
-                height: 100px;
+                width: 150px;
+                height: 150px;
             }
 
             .section-title {
                 align-items: center;
             }
 
+            .subtitle {
+                width: 500px;
+                margin: 0;
+                display: flex;
+                justify-content: center;
+                /* align-items: center; */
+                font-size: 12px;
+                color: gray;
+                margin-top: 20px
+            }
+
             .buy-link {
                 padding: 5px 8px;
                 height: 100%;
+            }
+
+
+            .img-57 {
+                width: 250px;
+                height: 350px;
+            }
+
+
+            .img-57>img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover
+            }
+
+            .demo {
+
+                margin-top: 20px;
+                justify-content: space-between;
+
+            }
+
+            .row-viewbook,
+            .row-bottom,
+            .bottom-subtitle,
+            .footer {
+                margin-top: 20px;
             }
 
             p {
@@ -222,6 +275,10 @@
 
             .img-57 {
                 width: 200px;
+            }
+
+            .photo {
+                margin-top: 20px;
             }
         }
 
@@ -305,11 +362,11 @@
                 <div class="img-300">
                     <img src="./HTMLCSS-master/website_imgs/product5.jpg" alt="product4">
                 </div>
-                <p> Dress </p>
+                <p>Collins Dress </p>
                 <p>$80.00</p>
 
             </div>
-            <div class="demo-model order-1">
+            <div class="demo-model">
                 <div class="img-57">
                     <img src="./HTMLCSS-master/website_imgs/model2.jpg" alt="model1">
                 </div>
@@ -317,7 +374,7 @@
         </section>
 
 
-        <div class="row justify-contnet-center mt-40 ">
+        <div class="row-viewbook">
             <a href="#" class="text-gray">View Lookbook</a>
         </div>
         <section class="row photo">
@@ -336,7 +393,7 @@
             </div>
 
         </section>
-        <section class=bottom-subtitle>
+        <section class="bottom-subtitle">
             <span>Sign up to receive news and updates.</span>
         </section>
         <footer class="container">

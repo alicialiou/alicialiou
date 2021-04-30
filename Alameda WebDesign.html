@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ALICIA LIOU Web Design</title>
+    <title>パオパオ</title>
     <link rel="stylesheet" href="./fontawesome-free-5.15.3-web/css/all.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
@@ -22,13 +22,14 @@
         .container {
             width: 960px;
             margin: 0 auto;
-
+            /* background-color: #ccc; */
         }
 
         .row {
             display: flex;
         }
 
+        /* .row>div {33.333%} */
 
         .navbar-left,
         .logo,
@@ -54,7 +55,7 @@
 
         .navbar-right>i {
             font-size: 1.2rem;
-
+            /* color: purple; */
 
         }
 
@@ -65,10 +66,9 @@
 
         .buy-link {
             background-color: #777;
-
+            /* a 是靠內容物撐開 所以height: 50%;沒用 */
             padding: 20px;
             color: #fff;
-
 
         }
 
@@ -88,6 +88,7 @@
             height: 100%;
             object-fit: cover;
         }
+
 
         .subtitle {
             width: 900px;
@@ -158,6 +159,13 @@
             color: gray;
         }
 
+        .row-viewbook {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
         .row-bottom {
             text-align: center;
             display: flex;
@@ -174,6 +182,7 @@
 
         }
 
+
         .navbar-bottom {
             display: flex;
             gap: 24px;
@@ -181,8 +190,96 @@
 
         .navbar-bottom>i {
             font-size: 1.2rem;
+            /* color: purple; */
+
+        }
+
+        .mobile-btn {
+            display: none;
+        }
+
+        @media screen and (max-width:500px) {
+            * {
+                font-size: 10px;
+                font-family: 'Open Sans', sans-serif;
+            }
+
+            .container {
+                width: 100%;
+            }
+
+            .navbar-left {
+                display: none;
+            }
+
+            .mobile-btn {
+                display: block;
+                width: 33.3333%;
+            }
+
+            .img-300 {
+                width: 150px;
+                height: 150px;
+            }
+
+            .section-title {
+                align-items: center;
+            }
+
+            .subtitle {
+                width: 500px;
+                margin: 0;
+                display: flex;
+                justify-content: center;
+                /* align-items: center; */
+                font-size: 12px;
+                color: gray;
+                margin-top: 20px
+            }
+
+            .buy-link {
+                padding: 5px 8px;
+                height: 100%;
+            }
 
 
+            .img-57 {
+                width: 250px;
+                height: 350px;
+            }
+
+
+            .img-57>img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover
+            }
+
+            .demo {
+
+                margin-top: 20px;
+                justify-content: space-between;
+
+            }
+
+            .row-viewbook,
+            .row-bottom,
+            .bottom-subtitle,
+            .footer {
+                margin-top: 20px;
+            }
+
+            p {
+                font-size: 10px;
+            }
+
+            .img-57 {
+                width: 200px;
+            }
+
+            .photo {
+                margin-top: 20px;
+            }
         }
 
         footer {
@@ -266,10 +363,10 @@
                     <img src="./HTMLCSS-master/website_imgs/product5.jpg" alt="product4">
                 </div>
                 <p>Collins Dress </p>
-                <p>$60.00</p>
+                <p>$80.00</p>
 
             </div>
-            <div class="demo-model order-1">
+            <div class="demo-model">
                 <div class="img-57">
                     <img src="./HTMLCSS-master/website_imgs/model2.jpg" alt="model1">
                 </div>
@@ -277,7 +374,7 @@
         </section>
 
 
-        <div class="row justify-contnet-center mt-40 ">
+        <div class="row-viewbook">
             <a href="#" class="text-gray">View Lookbook</a>
         </div>
         <section class="row photo">
@@ -296,7 +393,7 @@
             </div>
 
         </section>
-        <section class=bottom-subtitle>
+        <section class="bottom-subtitle">
             <span>Sign up to receive news and updates.</span>
         </section>
         <footer class="container">
